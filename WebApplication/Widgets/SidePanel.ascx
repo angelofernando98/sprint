@@ -271,7 +271,7 @@
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     <li>
-                        <a href="widgets.html" aria-expanded="false">
+                        <a href="Dash" aria-expanded="false">
                             <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
@@ -281,7 +281,7 @@
         <i class="icon-briefcase menu-icon"></i><span class="nav-text">Business</span>
     </a>
     <ul aria-expanded="false">
-        <li><a href="#">Business Manager</a></li>
+        <li><a href="Business">Business Manager</a></li>
         <li><a href="#">Staff Manager</a></li>
         <li><a href="#">Client Manager</a></li>
     </ul>

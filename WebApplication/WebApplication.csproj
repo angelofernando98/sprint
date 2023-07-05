@@ -5277,6 +5277,7 @@
     <Content Include="Content\plugins\typeahedjs\dist\nfl.json" />
     <Content Include="Content\plugins\typeahedjs\dist\nhl.json" />
     <Content Include="NotFound.aspx" />
+    <Content Include="Business.aspx" />
     <Content Include="Widgets\FooterPanel.ascx" />
     <Content Include="Widgets\SidePanel.ascx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -5370,6 +5371,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Business.aspx.cs">
+      <DependentUpon>Business.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Business.aspx.designer.cs">
+      <DependentUpon>Business.aspx</DependentUpon>
     </Compile>
     <Compile Include="Widgets\FooterPanel.ascx.cs">
       <DependentUpon>FooterPanel.ascx</DependentUpon>
