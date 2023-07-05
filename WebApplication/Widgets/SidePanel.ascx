@@ -1,27 +1,55 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SidePanel.ascx.cs" Inherits="WebApplication.Widgets.SidePanel" %>
 
-
 <!DOCTYPE html>
-<html class="h-100" lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
-    <!-- Favicon icon -->
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
 
     <link rel="icon" type="image/png" sizes="16x16" href="Content/images/favicon.png">
     <!-- Pignose Calender -->
-    <link href="Content/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <link href="~/Content/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
     <!-- Chartist -->
-    <link rel="stylesheet" href="Content/plugins/chartist/css/chartist.min.css">
-    <link rel="stylesheet" href="Content/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-    <!-- Custom Stylesheet -->
-    <link href="Content/css/style.css" rel="stylesheet"></head>
+    <link rel="stylesheet" href="~/Content/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="~/Content/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+            <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="~/Content/plugins/common/common.min.js"></script>
+    <script src="~/Content/js/custom.min.js"></script>
+    <script src="~/Content/js/settings.js"></script>
+    <script src="~/Content/js/gleek.js"></script>
+    <script src="~/Content/js/styleSwitcher.js"></script>
 
-<body class="h-100">
-    
+    <!-- Chartjs -->
+    <script src="~/Content/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="~/Content/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="~/Content/plugins/d3v3/index.js"></script>
+    <script src="~/Content/plugins/topojson/topojson.min.js"></script>
+    <script src="~/Content/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="~/Content/plugins/raphael/raphael.min.js"></script>
+    <script src="~/Content/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="~/Content/plugins/moment/moment.min.js"></script>
+    <script src="~/Content/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="~/Content/plugins/chartist/js/chartist.min.js"></script>
+    <script src="~/Content/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="~/Content/js/dashboard/dashboard-1.js"></script>
+    <!-- Custom Stylesheet -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
     <!--*******************
         Preloader start
     ********************-->
@@ -32,17 +60,22 @@
             </svg>
         </div>
     </div>
+    <!--*******************
+        Preloader end
+    ********************-->
 
-<!--**********************************
+    <div id="main-wrapper">
+
+        <!--**********************************
             Nav header start
         ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
                 <a href="index.html">
-                    <b class="logo-abbr"><img src="../Content/images/logo.png" alt=""> </b>
-                    <span class="logo-compact"><img src="../Content/images/logo-compact.png" alt=""></span>
+                    <b class="logo-abbr"><img src="Content/images/logo.png" alt=""> </b>
+                    <span class="logo-compact"><img src="Content/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="../Content/images/logo-text.png" alt="">
+                        <img src="Content/images/logo-text.png" alt="">
                     </span>
                 </a>
             </div>
@@ -89,7 +122,7 @@
                                     <ul>
                                         <li class="notification-unread">
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/1.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/1.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Saiful Islam</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -99,7 +132,7 @@
                                         </li>
                                         <li class="notification-unread">
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/2.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/2.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Adam Smith</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -109,7 +142,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/3.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/3.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Barak Obama</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -119,7 +152,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/4.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/4.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Hilari Clinton</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -327,3 +360,5 @@
         <!--**********************************
             Sidebar end
         ***********************************-->
+
+ 
