@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplication.Login" %>
 
-<asp:Content ID="LoginContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="LoginContent" ContentPlaceHolderID="LoginContent" runat="server">
     <div class="login-form-bg h-100">
         <div class="container h-100">
             <div class="row justify-content-center h-100">

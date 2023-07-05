@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication.Widgets
+namespace WebApplication
 {
 
 
-    public partial class Footer
+    public partial class NotFound
     {
 
         /// <summary>

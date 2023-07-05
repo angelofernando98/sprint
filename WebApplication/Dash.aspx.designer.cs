@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication.Widgets {
+namespace WebApplication {
     
     
-    public partial class Header {
+    public partial class Dash {
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Footer.aspx.cs" Inherits="WebApplication.Widgets.Footer" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NotFound.aspx.cs" Inherits="WebApplication.NotFound" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            404 - Page Not Found
         </div>
     </form>
 </body>

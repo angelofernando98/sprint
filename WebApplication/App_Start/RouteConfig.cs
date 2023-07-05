@@ -16,6 +16,10 @@ namespace WebApplication
 
             //Home Page Route
             routes.MapPageRoute("HomeRoute", "", "~/Login.aspx");
+            routes.MapPageRoute("DashboardRoute", "home", "~/Dash.aspx");
+
+            // Register the catch-all route
+            routes.MapPageRoute("CatchAllRoute", "{*url}", "~/NotFound.aspx");
         }
     }
 }

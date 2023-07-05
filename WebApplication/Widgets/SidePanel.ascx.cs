@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication.Widgets
 {
-    public partial class Footer : System.Web.UI.Page
+    public partial class SidePanel : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

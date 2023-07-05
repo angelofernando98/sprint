@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication.Widgets
+namespace WebApplication
 {
-    public partial class Header : System.Web.UI.Page
+    public partial class Dash : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

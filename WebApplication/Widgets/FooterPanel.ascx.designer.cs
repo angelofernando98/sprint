@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication
+namespace WebApplication.Widgets
 {
 
 
-    public partial class About
+    public partial class FooterPanel
     {
     }
 }

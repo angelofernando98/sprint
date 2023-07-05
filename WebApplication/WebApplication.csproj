@@ -105,7 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dashboard.aspx" />
+    <Content Include="Dash.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -5002,7 +5002,6 @@
     <Content Include="Content\plugins\x-editable\dist\bootstrap3-editable\js\bootstrap-editable.min.js" />
     <Content Include="Content\plugins\xml\plugin.js" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -5277,8 +5276,9 @@
     <Content Include="Content\plugins\typeahedjs\dist\nba.json" />
     <Content Include="Content\plugins\typeahedjs\dist\nfl.json" />
     <Content Include="Content\plugins\typeahedjs\dist\nhl.json" />
-    <Content Include="Widgets\Footer.aspx" />
-    <Content Include="Widgets\Header.aspx" />
+    <Content Include="NotFound.aspx" />
+    <Content Include="Widgets\FooterPanel.ascx" />
+    <Content Include="Widgets\SidePanel.ascx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -5317,12 +5317,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Dash.aspx.cs">
+      <DependentUpon>Dash.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Dash.aspx.designer.cs">
+      <DependentUpon>Dash.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -5331,13 +5331,6 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5348,6 +5341,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -5371,19 +5371,19 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Widgets\Footer.aspx.cs">
-      <DependentUpon>Footer.aspx</DependentUpon>
+    <Compile Include="Widgets\FooterPanel.ascx.cs">
+      <DependentUpon>FooterPanel.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Widgets\Footer.aspx.designer.cs">
-      <DependentUpon>Footer.aspx</DependentUpon>
+    <Compile Include="Widgets\FooterPanel.ascx.designer.cs">
+      <DependentUpon>FooterPanel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Widgets\Header.aspx.cs">
-      <DependentUpon>Header.aspx</DependentUpon>
+    <Compile Include="Widgets\SidePanel.ascx.cs">
+      <DependentUpon>SidePanel.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Widgets\Header.aspx.designer.cs">
-      <DependentUpon>Header.aspx</DependentUpon>
+    <Compile Include="Widgets\SidePanel.ascx.designer.cs">
+      <DependentUpon>SidePanel.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

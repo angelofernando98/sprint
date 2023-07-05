@@ -34,18 +34,23 @@
     <!--*******************
         Preloader end
     ********************-->
+    <asp:ContentPlaceHolder ID="LoginContent" runat="server">
 
-    
+    </asp:ContentPlaceHolder>
+
+    <div id="main-wrapper">
 
     
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+
         </asp:ContentPlaceHolder>
 
     
     
 
     
-
+    </div>
       <!--**********************************
         Scripts
     ***********************************-->
