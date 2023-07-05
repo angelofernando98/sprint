@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication {
+namespace WebApplication.Widgets {
     
     
-    public partial class _Default {
+    public partial class Header {
     }
 }

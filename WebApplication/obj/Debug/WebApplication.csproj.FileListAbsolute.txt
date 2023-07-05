@@ -204,8 +204,8 @@ C:\Users\hansi\Source\Repos\sprint\WebApplication\bin\Newtonsoft.Json.xml
 C:\Users\hansi\Source\Repos\sprint\WebApplication\bin\Antlr3.Runtime.pdb
 C:\Users\hansi\Source\Repos\sprint\WebApplication\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\hansi\Source\Repos\sprint\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\hansi\Source\Repos\sprint\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
 C:\Users\hansi\Source\Repos\sprint\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
 C:\Users\hansi\Source\Repos\sprint\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
 C:\Users\hansi\Source\Repos\sprint\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\hansi\Source\Repos\sprint\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\hansi\source\repos\sprint\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache

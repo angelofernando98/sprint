@@ -13,6 +13,9 @@ namespace WebApplication
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+
+            //Home Page Route
+            routes.MapPageRoute("HomeRoute", "", "~/Login.aspx");
         }
     }
 }
