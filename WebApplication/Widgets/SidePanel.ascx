@@ -217,7 +217,7 @@
     </a>
     <ul aria-expanded="false">
         <li><a href="Business">Business Manager</a></li>
-        <li><a href="#">Staff Manager</a></li>
+        <li><a href="Staff">Staff Manager</a></li>
         <li><a href="#">Client Manager</a></li>
     </ul>
 </li>
