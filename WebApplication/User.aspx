@@ -69,13 +69,19 @@
             </div>
         </div>
 
-        <div class="form-group row">
-            <div class="col-lg-8 offset-lg-4">
-                <asp:Button runat="server" ID="btnDelete" Text="Delete" CssClass="btn btn-danger"/>
-                <asp:Button runat="server" ID="btnUpdate" Text="Update" CssClass="btn btn-primary" />
-                <asp:Button style="color: white;" runat="server" ID="btnRegister" Text="Register" CssClass="btn btn-success"/>
-            </div>
+        <div class="form-group">
+    <div class="row">
+        <div class="col">
+            <asp:Button runat="server" ID="DeleteButton" Text="Delete" CssClass="btn btn-danger btn-block" />
         </div>
+        <div class="col">
+            <asp:Button runat="server" ID="UpdateButton" Text="Update" CssClass="btn btn-primary btn-block" />
+        </div>
+        <div class="col">
+            <asp:Button style="color: white" runat="server" ID="RegisterButton" Text="Register" CssClass="btn btn-success btn-block" />
+        </div>
+    </div>
+</div>
     
         <h4 style="margin-bottom: 3%; margin-top: 6%;">Select User Access</h4>
         <table class="table table-hover">

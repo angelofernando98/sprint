@@ -33,13 +33,13 @@
     <div class="col-lg-4">
         <asp:TextBox runat="server" ID="search_staff" CssClass="form-control" placeholder="Enter staff name.." />
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-2" align="center">
         <asp:Button style="margin-top: 4px" runat="server" ID="btnSearch" Text="Search" CssClass="btn btn-primary" />
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-2" align="center">
         <asp:Button style="margin-top: 4px" runat="server" ID="Button1" Text="View All" CssClass="btn btn-primary" />
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-2" align="center">
         <asp:Button style="margin-top: 4px" runat="server" ID="Button2" Text="View Profile" CssClass="btn btn-primary" />
     </div>
 </div>

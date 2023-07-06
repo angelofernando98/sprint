@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Business.aspx" />
+    <Content Include="Client.aspx" />
     <Content Include="Dash.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -5326,6 +5327,13 @@
     </Compile>
     <Compile Include="Business.aspx.designer.cs">
       <DependentUpon>Business.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client.aspx.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client.aspx.designer.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dash.aspx.cs">
       <DependentUpon>Dash.aspx</DependentUpon>
