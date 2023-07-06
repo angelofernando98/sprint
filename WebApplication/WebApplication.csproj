@@ -5278,6 +5278,7 @@
     <Content Include="Content\plugins\typeahedjs\dist\nfl.json" />
     <Content Include="Content\plugins\typeahedjs\dist\nhl.json" />
     <Content Include="NotFound.aspx" />
+    <Content Include="User.aspx" />
     <Content Include="Widgets\FooterPanel.ascx" />
     <Content Include="Widgets\SidePanel.ascx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -5371,6 +5372,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

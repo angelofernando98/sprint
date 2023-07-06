@@ -227,7 +227,7 @@
         <i class="icon-people menu-icon"></i><span class="nav-text">User Management</span>
     </a>
     <ul aria-expanded="false">
-        <li><a href="#">User Access</a></li>
+        <li><a href="User">User Access</a></li>
     </ul>
 </li>
 
