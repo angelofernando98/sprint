@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -8136,79 +8136,16 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     .content-body {
       margin-left: 14.375rem; } }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: auto; /* Enable scrolling for the entire website */
-}
-
-body {
-    position: relative; /* Add this line to make room for the fixed header */
-}
-
 .nk-sidebar {
-    width: 15.1875rem;
-    position: fixed;
-    top: 5rem;
-    left: 0;
-    bottom: 0;
-    padding-top: 0;
-    z-index: 99;
-    background: #fff;
-    transition: all 0.2s ease;
-    overflow-y: auto;
-}
-
-.nav-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5rem;
-    background: #fff;
-    z-index: 100;
-}
-
-.brand-logo {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 1rem;
-}
-
-    .brand-logo a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-.brand-title {
-    font-size: 1.25rem;
-    margin-left: 0.5rem;
-}
-
-/* For Webkit-based browsers (Chrome, Safari, Opera) */
-::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
-}
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555; /* Color of the scrollbar thumb on hover */
-    }
-
-/* For Firefox */
-/* Note: Firefox does not currently support customizing the scrollbar appearance */
-
-
+  width: 15.1875rem;
+  padding-bottom: 112px;
+  height: 100%;
+  position: absolute;
+  top: 5rem;
+  padding-top: 0;
+  z-index: 99;
+  background: #fff;
+  transition: all .2s ease; }
   @media only screen and (min-width: 1200px) and (max-width: 1350px) {
     .nk-sidebar {
       width: 14.375rem; } }

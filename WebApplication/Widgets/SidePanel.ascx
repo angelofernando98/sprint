@@ -1,81 +1,16 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SidePanel.ascx.cs" Inherits="WebApplication.Widgets.SidePanel" %>
 
-<!DOCTYPE html>
 
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-
-
-    <link rel="icon" type="image/png" sizes="16x16" href="Content/images/favicon.png">
-    <!-- Pignose Calender -->
-    <link href="~/Content/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
-    <!-- Chartist -->
-    <link rel="stylesheet" href="~/Content/plugins/chartist/css/chartist.min.css">
-    <link rel="stylesheet" href="~/Content/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-            <!--**********************************
-        Scripts
-    ***********************************-->
-    <script src="~/Content/plugins/common/common.min.js"></script>
-    <script src="~/Content/js/custom.min.js"></script>
-    <script src="~/Content/js/settings.js"></script>
-    <script src="~/Content/js/gleek.js"></script>
-    <script src="~/Content/js/styleSwitcher.js"></script>
-
-    <!-- Chartjs -->
-    <script src="~/Content/plugins/chart.js/Chart.bundle.min.js"></script>
-    <!-- Circle progress -->
-    <script src="~/Content/plugins/circle-progress/circle-progress.min.js"></script>
-    <!-- Datamap -->
-    <script src="~/Content/plugins/d3v3/index.js"></script>
-    <script src="~/Content/plugins/topojson/topojson.min.js"></script>
-    <script src="~/Content/plugins/datamaps/datamaps.world.min.js"></script>
-    <!-- Morrisjs -->
-    <script src="~/Content/plugins/raphael/raphael.min.js"></script>
-    <script src="~/Content/plugins/morris/morris.min.js"></script>
-    <!-- Pignose Calender -->
-    <script src="~/Content/plugins/moment/moment.min.js"></script>
-    <script src="~/Content/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
-    <!-- ChartistJS -->
-    <script src="~/Content/plugins/chartist/js/chartist.min.js"></script>
-    <script src="~/Content/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
-
-
-
-    <script src="~/Content/js/dashboard/dashboard-1.js"></script>
-    <!-- Custom Stylesheet -->
-    <link href="~/Content/css/style.css" rel="stylesheet">
-
-</head>
-<body>
-
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
-            </svg>
-        </div>
-    </div>
-    <!--*******************
-        Preloader end
-    ********************-->
-
-    <div id="main-wrapper">
-
-        <!--**********************************
+<!--**********************************
             Nav header start
         ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
                 <a href="index.html">
-                    <b class="logo-abbr"><img src="Content/images/logo.png" alt=""> </b>
-                    <span class="logo-compact"><img src="Content/images/logo-compact.png" alt=""></span>
+                    <b class="logo-abbr"><img src="../Content/images/logo.png" alt=""> </b>
+                    <span class="logo-compact"><img src="../Content/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="Content/images/logo-text.png" alt="">
+                        <img src="../Content/images/logo-text.png" alt="">
                     </span>
                 </a>
             </div>
@@ -122,7 +57,7 @@
                                     <ul>
                                         <li class="notification-unread">
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/1.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/1.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Saiful Islam</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -132,7 +67,7 @@
                                         </li>
                                         <li class="notification-unread">
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/2.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/2.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Adam Smith</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -142,7 +77,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/3.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/3.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Barak Obama</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -152,7 +87,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img class="float-left mr-3 avatar-img" src="Content/images/avatar/4.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="../Content/images/avatar/4.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Hilari Clinton</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -270,95 +205,101 @@
         <div class="nk-sidebar">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
+                    <li class="nav-label">Dashboard</li>
                     <li>
-                        <a href="Dash" aria-expanded="false">
-                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        <a class="has-arrow" href="#" aria-expanded="false">
+                            <i class="icon-people menu-icon"></i><span class="nav-text">Students</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">New Student</a></li>
+                            <li><a href="./index-2.html">Search Student</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Teachers</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">New Teacher</a></li>
+                            <li><a href="./index-2.html">Search Teacher</a></li>
+                            <li><a href="./index-2.html">Attendance</a></li>
+                            <li><a href="./index-2.html">Search Attendance  </a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-badge menu-icon"></i><span class="nav-text">Grades</span>
                         </a>
                     </li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-briefcase menu-icon"></i><span class="nav-text">Business</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="Business">Business Manager</a></li>
-        <li><a href="#">Staff Manager</a></li>
-        <li><a href="#">Client Manager</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-people menu-icon"></i><span class="nav-text">User Management</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">User Access</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-clock menu-icon"></i><span class="nav-text">Scheduling</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">Roster</a></li>
-        <li><a href="#">Attendance</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-basket menu-icon"></i><span class="nav-text">Financial</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">Purchase</a></li>
-        <li><a href="#">Invoice</a></li>
-        <li><a href="#">Debtors &amp; Creditors</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-chart menu-icon"></i><span class="nav-text">Reports</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">Attendance Report</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-folder-alt menu-icon"></i><span class="nav-text">Resources</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">Office Files</a></li>
-        <li><a href="#">Letters</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-bubbles menu-icon"></i><span class="nav-text">Communication</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">Send SMS</a></li>
-    </ul>
-</li>
-
-<li>
-    <a class="has-arrow" href="#" aria-expanded="false">
-        <i class="icon-docs menu-icon"></i><span class="nav-text">System</span>
-    </a>
-    <ul aria-expanded="false">
-        <li><a href="#">System Log</a></li>
-    </ul>
-</li>
-
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-graduation menu-icon"></i><span class="nav-text">Class</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-layers menu-icon"></i><span class="nav-text">Subjects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-home menu-icon"></i><span class="nav-text">Schools</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-calender menu-icon"></i><span class="nav-text">Time Table</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-user-following menu-icon"></i><span class="nav-text">Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false">
+                            <i class="icon-doc menu-icon"></i><span class="nav-text">Leaving Certificate</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">New Certificate</a></li>
+                            <li><a href="./index-2.html">Search Certificate</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false">
+                            <i class="icon-list menu-icon"></i><span class="nav-text">Student Marks</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Exam Marks</a></li>
+                            <li><a href="./index-2.html">Search Report</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-user menu-icon"></i><span class="nav-text">User Access</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-organization menu-icon"></i><span class="nav-text">Class Transfer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false">
+                            <i class="icon-credit-card menu-icon"></i><span class="nav-text">Payments</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Categories</a></li>
+                            <li><a href="./index-2.html">Payment Type</a></li>
+                            <li><a href="./index-2.html">Pay</a></li>
+                            <li><a href="./index-2.html">Student Passbook</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-folder-alt menu-icon"></i><span class="nav-text">System Log</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <!--**********************************
-            Sidebar end
-        ***********************************-->
-
- 
