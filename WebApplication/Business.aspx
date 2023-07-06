@@ -87,9 +87,68 @@
                 <asp:Button runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
             </div>
         </div>
+
+        <h4 style="margin-bottom: 3%; margin-top: 6%;">Select Business</h4>
+        <div class="table-responsive">
+        <table class="table table-hover">
+            <thead align="center">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Telephone</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                    <th>Description</th>
+                    <th>User ID</th>
+                    <th>Reg Date</th>
+                    <th>URL</th>
+                    
+                </tr>
+            </thead>
+            <tbody align="center">
+                <!-- Add rows for each user with their respective data -->
+                <tr onclick="redirectToDashboard(1)" style="cursor: pointer;">
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>123 Main St</td>
+                    <td>555-123-4567</td>
+                    <td>johndoe@example.com</td>
+                    <td>www.example.com</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>123456789</td>
+                    <td>2023-07-07</td>
+                    <td>www.example.com/profile/johndoe</td>
+                </tr>
+                <tr onclick="redirectToDashboard(2)" style="cursor: pointer;">
+                    <td>1001</td>
+                    <td>Emma Smith</td>
+                    <td>456 Elm St</td>
+                    <td>555-987-6543</td>
+                    <td>emma.smith@example.com</td>
+                    <td>www.examplewebsite.com</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td>987654321</td>
+                    <td>2023-07-07</td>
+                    <td>www.examplewebsite.com/profile/emmasmith</td>
+
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+            </div>
+
+
+
+
     </form>
 </div>
-
+<script>
+    function redirectToDashboard(userId) {
+        // Redirect to the dashboard page with the selected user's ID
+        window.location.href = "User?userId=" + userId;
+    }
+</script>
 
 
 

@@ -108,9 +108,127 @@
                 <asp:Button style="margin-top: 4px" runat="server" ID="btnSearch" Text="Search" CssClass="btn btn-primary" />
             </div>
     <div class="col-lg-2">
-                <asp:Button style="margin-top: 4px" runat="server" ID="btnView" Text="View All" CssClass="btn btn-primary" />
+                <asp:Button style="margin-top: 4px" runat="server" ID="btnView" Text="View All" CssClass="btn btn-primary" OnClientClick="onViewAllClicked(); return false;" />
+
             </div>
         </div>
+
+
+<br /><br />
+<table id="dataTable" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Customer Type</th>
+                     <th>Customer Name / Company Name</th>
+                     <th>Contact Personal</th>
+                     <th>Mobile Number</th>
+                     <th>Address</th>
+                     <th>Email</th>
+                     <th>NIC Number</th>
+                     <th>Credit Limit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add rows for each user with their respective data -->
+                <tr onclick="redirectToDashboard(1)" style="cursor: pointer;">
+
+                </tr>
+                <tr onclick="redirectToDashboard(2)" style="cursor: pointer;">
+
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+ <style>
+   #dataTable thead {
+      display: none;
+   }
+</style>
+
+
+                                       <script>
+                                           function redirectToDashboard(userId) {
+                                               // Redirect to the dashboard page with the selected user's ID
+                                               window.location.href = "User?userId=" + userId;
+                                           }
+                                           function onViewAllClicked() {
+                                               // Show the table header
+                                               var tableHeader = document.querySelector("#dataTable thead");
+                                               tableHeader.style.display = "table-header-group";
+                                               // Clear existing table data
+                                               var tableBody = document.querySelector("#dataTable tbody");
+                                               tableBody.innerHTML = "";
+
+                                               // Sample data
+                                               var sampleData = [
+                                                   {
+                                                       column1: "Individual",
+                                                       column2: "John Doe",
+                                                       column3: "1234567890",
+                                                       column4: "1234567890",
+                                                       column5: "123 Main St",
+                                                       column6: "johndoe@example.com",
+                                                       column7: "1234567890123",
+                                                       column8: "1000"
+                                                   },
+                                                   {
+                                                       column1: "Corporate",
+                                                       column2: "ABC Company",
+                                                       column3: "Jane Smith",
+                                                       column4: "9876543210",
+                                                       column5: "456 Park Ave",
+                                                       column6: "janesmith@example.com",
+                                                       column7: "9876543210987",
+                                                       column8: "5000"
+                                                   },
+                                                   // Add more sample data objects as needed
+                                               ];
+
+                                               // Populate the table with sample data
+                                               sampleData.forEach(function (data) {
+                                                   var row = document.createElement("tr");
+
+                                                   // Create table cells and populate them with data
+                                                   var cell1 = document.createElement("td");
+                                                   cell1.textContent = data.column1;
+                                                   row.appendChild(cell1);
+
+                                                   var cell2 = document.createElement("td");
+                                                   cell2.textContent = data.column2;
+                                                   row.appendChild(cell2);
+
+                                                   var cell3 = document.createElement("td");
+                                                   cell3.textContent = data.column3;
+                                                   row.appendChild(cell3);
+
+                                                   var cell4 = document.createElement("td");
+                                                   cell4.textContent = data.column4;
+                                                   row.appendChild(cell4);
+
+                                                   var cell5 = document.createElement("td");
+                                                   cell5.textContent = data.column5;
+                                                   row.appendChild(cell5);
+
+                                                   var cell6 = document.createElement("td");
+                                                   cell6.textContent = data.column6;
+                                                   row.appendChild(cell6);
+
+                                                   var cell7 = document.createElement("td");
+                                                   cell7.textContent = data.column7;
+                                                   row.appendChild(cell7);
+
+                                                   var cell8 = document.createElement("td");
+                                                   cell8.textContent = data.column8;
+                                                   row.appendChild(cell8);
+
+                                                   // Append the row to the table body
+                                                   tableBody.appendChild(row);
+                                               });
+                                           }
+</script>
+
+
 
 
                                        
