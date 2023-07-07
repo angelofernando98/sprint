@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="Content/plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="Content/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
-    <link href="Content/css/style.css" rel="stylesheet"></head>
+    <link href="Content/css/style.css" rel="stylesheet">
+</head>
 
 <body class="h-100">
-    
+
     <!--*******************
         Preloader start
     ********************-->
@@ -35,23 +36,20 @@
         Preloader end
     ********************-->
     <asp:ContentPlaceHolder ID="LoginContent" runat="server">
-
     </asp:ContentPlaceHolder>
 
     <div id="main-wrapper">
 
-    
+
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
-
-
         </asp:ContentPlaceHolder>
 
-    
-    
 
-    
+
+
+
     </div>
-      <!--**********************************
+    <!--**********************************
         Scripts
     ***********************************-->
     <script src="Content/plugins/common/common.min.js"></script>
